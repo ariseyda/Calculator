@@ -18,28 +18,28 @@ int main(){
 	printf("Please enter an integer:");
 	scanf("%d",&y);
 	
-	if(n=='+' || n=='-' || n=='*' || n=='/' || n=='%'){
+	if(n=='+' || n=='-' || n=='*' || n=='/' || n=='%%'){
 		
 		switch(n){
 			case '+':
 			   result=x+y;
-			   printf("x+y:%.2f",result);	
+			   printf("%d+%d:%.2f",x,y,result);	
 			   break;
 			case '-':
 			   result=x-y;
-			   printf("x-y:%.2f",result);
+			   printf("%d-%d:%.2f",x,y,result);
 			   break;
 			case '*':
 			   result=x*y;
-			   printf("x*y:%.2f",result);
+			   printf("%d*%d:%.2f",x,y,result);
 			   break;
 			case '/':
 			   result=x/y;
-			   printf("x/y:%.2f",result);
+			   printf("%d/%d:%.2f",x,y,result);
 			   break;
 			case '%':
 			   result=x%y;
-			   printf("x%y:%.2f",result);
+			   printf("%d%%%d:%.2f",x,y,result);
 			   break;   
 			default :
 				break;
